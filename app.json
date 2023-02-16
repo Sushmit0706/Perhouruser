@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "perhour",
+    "slug": "perhour",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "perhour"
+}
