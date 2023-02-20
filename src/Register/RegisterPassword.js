@@ -72,7 +72,7 @@ const RegisterPassword = () => {
             <Text style={{ marginTop: 5, paddingLeft: 20, fontSize: 10 }}>
               By Signing in You agree to our T&C and Privacy Policies{" "}
             </Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("details")}>
               <View
                 style={{
                   backgroundColor: "#3d3a4bff",
@@ -93,10 +93,6 @@ const RegisterPassword = () => {
                 >
                   Add Details
                 </Text>
-
-                <TouchableOpacity onPress={() => navigation.navigate("login")}>
-                  <Text style={{ marginTop: 10 }}>Dont Have An Account</Text>
-                </TouchableOpacity>
               </View>
             </TouchableOpacity>
           </View>

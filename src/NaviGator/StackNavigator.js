@@ -6,6 +6,7 @@ import Register from "../Register/Register";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import RegisterPassword from "../Register/RegisterPassword";
 import LoginPassword from "../Login/LoginPassword";
+import RegisterDetails from "../Register/RegisterDetails";
 
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -25,6 +26,15 @@ const StackNavigator = () => {
         <Stack.Screen
           name="register"
           component={Register}
+          options={{
+            headerShown: false,
+            fullScreenGestureEnabled: true,
+            navigationBarHidden: false,
+          }}
+        />
+        <Stack.Screen
+          name="details"
+          component={RegisterDetails}
           options={{
             headerShown: false,
             fullScreenGestureEnabled: true,
