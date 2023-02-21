@@ -11,7 +11,7 @@ import {
 
 import image from "../../assets/login2.png";
 
-const Login = () => {
+const Register = () => {
   const navigation = useNavigation();
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior="height" enabled>
@@ -53,7 +53,7 @@ const Login = () => {
             <Text
               style={{ alignSelf: "center", fontSize: 30, fontWeight: "200" }}
             >
-              Login
+              Register
             </Text>
             <TextInput
               style={{
@@ -73,7 +73,7 @@ const Login = () => {
               By Signing in You agree to our T&C and Privacy Policies{" "}
             </Text>
             <TouchableOpacity
-              onPress={() => navigation.navigate("loginpassword")}
+              onPress={() => navigation.navigate("registerpassword")}
             >
               <View
                 style={{
@@ -96,10 +96,10 @@ const Login = () => {
                   Proceed
                 </Text>
 
-                <TouchableOpacity
-                  onPress={() => navigation.navigate("register")}
-                >
-                  <Text style={{ marginTop: 10 }}>Dont Have An Account</Text>
+                <TouchableOpacity onPress={() => navigation.navigate("login")}>
+                  <Text style={{ marginTop: 20 }}>
+                    Already Have An Account?
+                  </Text>
                 </TouchableOpacity>
               </View>
             </TouchableOpacity>
@@ -110,4 +110,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
