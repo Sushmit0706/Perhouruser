@@ -99,7 +99,7 @@ const Login = () => {
                 <TouchableOpacity
                   onPress={() => navigation.navigate("register")}
                 >
-                  <Text style={{ marginTop: 10 }}>Dont Have An Account</Text>
+                  <Text style={{ marginTop: 30 }}>Dont Have An Account?</Text>
                 </TouchableOpacity>
               </View>
             </TouchableOpacity>
